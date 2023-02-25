@@ -1,0 +1,442 @@
+
+body{
+
+    background-color: rgb(24, 24, 35); }
+
+header, footer{
+    display: flex;
+    justify-content: space-between;
+    background-image: url("../Fotos/fondoheader.PNG");
+    height: 8rem;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin:  2rem 3rem 2rem 2rem;}
+
+header h1{
+    color:rgb(83, 127, 231) ;
+    height: 3rem;
+    margin-left: 3rem;}
+
+.saludo-final{ margin-left: 3rem; }
+
+.navegacion{ padding: 2rem;}
+
+.navegacion a.href{
+    margin-right: 2rem;
+    text-decoration: none;
+    color:rgb(83, 127, 231); }
+
+.redes{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    color: rgb(186, 215, 233);
+
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;}
+
+.redes a{
+    text-decoration: none;
+    color: rgb(186, 215, 233);}
+
+
+.imagenes-redes{
+    height: 8rem;
+    width: 8rem;  }
+
+.imageneshome{
+    margin-top: 4rem;
+    color:rgb(186, 215, 233);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    column-gap: 3rem;
+    row-gap: 3rem;
+    grid-template-columns: repeat(2,fr);
+    grid-template-rows: repeat(10,fr);
+    grid-template-areas: 
+    'comentario comentario'
+    'home1 home1  '
+    'home2 home3'
+    'home4 home4'
+    'home5 home6'
+    'home7 home7'
+    'home8 home9'}
+
+.presentacion{grid-area: comentario;}
+.comentario-home{grid-area: home1;}
+.foto-manuel-home{grid-area: home2;}
+.foto-cables-home{grid-area: home3;}
+.comentario-home-dos{grid-area: home4;}
+.foto-negocio-home{grid-area: home5;}
+.foto-consola-home{grid-area: home6;}
+.comentario-home-tres{grid-area: home7;}
+.gente-local-home{grid-area: home8;}
+.pantalla-home{grid-area: home9;}
+
+
+.imageneshome img{
+    height: 30rem;
+    width: 40rem;}
+
+#texto-contacto{
+    color: rgb(186, 215, 233);
+    margin-top: 8rem;
+    width: 40rem;}
+    
+
+.formularios-datos{
+    margin-top: 5rem;
+    color: rgb(186, 215, 233);}
+
+.mb-3{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+}
+
+#area-mensaje{
+    resize: none;
+    height: 10rem;
+    overflow: hidden;}
+
+#imagencontacto{
+    margin-left: 500rem ;
+    position: absolute;
+    width: 27rem;}
+
+.titulo{
+    color:  rgb(186, 215, 233);
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    font-size: 5rem;}
+
+.boton{
+    margin-top: 2rem;
+    margin-left: 4rem;}   
+
+.fotos-ventas img{
+    height: 30rem;
+    width: 30rem;
+    margin-left: 1rem;
+    margin-top: 1rem;}
+
+.ventas-dialogo{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    color:rgb(186, 215, 233);}
+
+.nosotros-cero{grid-area:item-0;}
+.nosotros-coment{grid-area: item-coment;}
+.nosotros-uno{grid-area:item-1;}
+.nosotros-dos{grid-area:item-2;}
+.nosotros-tres{grid-area: item-3;}
+.nosotros-cuatro{grid-area:item-4;}
+.nosotros-cinco{grid-area:item-5;}
+
+.imagenesnuestras{
+    display:grid;
+    grid-template-columns: repeat (2,fr);
+    grid-template-rows: repeat (5,55rem);
+    color: rgb(186, 215, 233);
+    grid-template-areas: 
+    'item-0 item-0'
+    'item-coment item-coment'
+    'item-1 item-2'
+    'item-3 item-4'
+    'item-5 item-5';
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    row-gap: 3rem;
+    column-gap: 3rem;}
+
+
+.imagenesnuestras img{
+    height: 40rem;
+    width: 40rem;}
+
+
+.video-uno {grid-area: vid-uno;}
+.video-dos {grid-area: vid-dos;}
+.video-tres {grid-area: vid-tres;}
+.video-cuatro {grid-area: vid-cuatro;}
+.video-cinco {grid-area: vid-cinco;}
+.video-seis {grid-area: vid-seis;}
+.video-siete {grid-area: vid-siete;}
+.video-ocho {grid-area: vid-ocho;}
+.video-nueve {grid-area: vid-nueve;}
+.video-diez {grid-area: vid-diez;}
+
+
+.videos-eventos{
+    display: grid;
+    grid-template-columns: repeat(2,fr);
+    grid-template-rows: repeat(5, 55rem);
+    grid-template-areas: 
+    'vid-uno vid-dos'   
+    'vid-tres vid-cuatro' 
+    'vid-cinco vid-seis'
+    'vid-siete vid-ocho'
+    'vid-nueve vid-diez'
+    ;
+    align-items: center;
+    color: rgb(186, 215, 233);
+    font-size: large;    
+    justify-items: center;  
+    column-gap: 3rem;
+    row-gap: 3rem;}
+
+.videos-eventos video{
+    height: 40rem;
+    width: 40rem;}
+
+@media (max-width: 1024px){
+
+.imagenesnuestras img{
+    width: 22rem;
+    height: 22rem;}
+
+.imagenes-redes{
+    height: 7rem;
+    width: 7rem;}
+
+.titulo{
+    font-size:4rem ;}
+
+.imagenes-redes{
+    height: 4rem;
+    width: 4rem;
+}
+.imageneshome img{
+        height: 25rem;
+        width: 25rem; 
+}
+.videos-eventos video{
+        margin-top: 1rem;
+        height: 25rem;
+        width: 25rem;    }
+
+.fotos-ventas img{
+    height: 26rem;
+    width: 26rem;}
+}
+#imagencontacto{
+        margin-top: 3rem;
+        margin-left: 40rem;
+        margin-bottom: 1rem;
+        width: 22rem;
+        height: 22rem;
+        position: absolute;}
+
+@media (max-width: 768px){
+
+    .imagenesnuestras img{
+            height: 15rem;
+            width: 15rem;}
+    
+    
+            
+    .imagenes-redes{
+            height: 5rem;
+            width: 5rem; }
+        
+    .titulo{
+         font-size: 4rem;
+        }
+    
+    
+    header, footer{
+            justify-content: center;
+        }
+    .navegacion{
+            padding: 0; }
+            
+    
+    .navegacion a{
+            margin: 0;
+            padding: 0;
+            font-size: small;}
+    
+    header h1{
+            height: 1rem;
+            margin-left: 0rem;
+            margin-top: 3rem;}
+    
+    .saludo-final{
+            margin-left: 1rem;
+            margin-top: 2rem;}   
+    
+
+    .imageneshome img{
+        height: 22rem;
+        width: 22rem;    }   
+
+       
+    .videos-eventos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;}
+
+    .videos-eventos video{
+        margin-top: 1rem;
+        height: 25rem;
+        width: 25rem;    }
+        
+    .fotos-ventas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;}
+
+    .fotos-ventas img{
+            height: 24rem;
+            width: 24rem;}
+
+     #imagencontacto{
+        margin-left: 8rem;
+        margin-bottom: 1rem;
+        width: 25rem;
+        position: relative;}
+
+    .imagenesnuestras p{
+        text-align: center;
+        }
+    
+    .imagenesnuestras section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        }
+
+    }
+
+    
+
+    
+
+@media (max-width: 425px){
+    
+    .titulo{
+        font-size: 2rem;
+    }
+    
+    
+    .imagenesnuestras {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;}
+
+    .imagenesnuestras p{
+        text-align: center;
+    }
+
+    .imagenesnuestras section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .imagenesnuestras img {
+        align-self: center;
+        justify-self: center;
+        height: 10rem;
+        width: 10rem;
+        }
+
+    .imagenes-redes{
+        
+        height: 3rem;
+        width: 3rem;
+        }
+    header, footer{
+        height: 15rem;
+        justify-content: center;
+    }
+    
+    .navegacion{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .navegacion a{
+        margin-top: 1rem;}
+
+    .imageneshome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;}
+
+    .imageneshome img{
+        height: 18rem;
+        width: 18rem; ;}
+    
+    .videos-eventos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;}
+
+    .videos-eventos video{
+        margin-top: 2rem;
+        height: 18rem;
+        width: 18rem;
+    }
+
+    .fotos-ventas {
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;}
+
+    .fotos-ventas img{
+        height: 15rem;
+        width: 15rem;
+
+    }
+
+    #imagencontacto{
+        margin-left: 3rem;
+        margin-bottom: 1rem;
+        width: 15rem;
+        position: relative;}
+    }
+    
+    
+
+    
