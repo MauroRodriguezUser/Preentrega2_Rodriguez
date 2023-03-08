@@ -1,8 +1,9 @@
 
 body{
 
-    background-color: rgb(24, 24, 35); }
-
+    background-color: rgb(24, 24, 35);
+    margin: 0;  }
+   
 header, footer{
     display: flex;
     justify-content: space-between;
@@ -11,7 +12,7 @@ header, footer{
     text-align: center;
     font-family: sans-serif;
     font-weight: bold;
-    margin:  2rem 3rem 2rem 2rem;}
+    }
 
 header h1{
     color:rgb(83, 127, 231) ;
@@ -27,13 +28,19 @@ header h1{
     text-decoration: none;
     color:rgb(83, 127, 231); }
 
+
+
+.navegacion a.href:hover{
+    color: rgb(102, 209, 102);
+    background-color: black;}
+
+
 .redes{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     
     color: rgb(186, 215, 233);
 
-    margin-top: 6rem;
-    margin-bottom: 3rem;
+    margin: 6rem 0 3rem 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;}
@@ -47,8 +54,12 @@ header h1{
     height: 8rem;
     width: 8rem;  }
 
+.imagenes-redes:hover{
+    transform: scale(2);
+}
+
 .imageneshome{
-    margin-top: 4rem;
+    margin: 0 1rem 0 1rem;
     color:rgb(186, 215, 233);
     display: grid;
     align-items: center;
@@ -78,7 +89,6 @@ header h1{
 .comentario-home-tres{grid-area: home7;}
 .gente-local-home{grid-area: home8;}
 .pantalla-home{grid-area: home9;}
-
 
 .imageneshome img{
     height: 30rem;
@@ -116,6 +126,7 @@ header h1{
     justify-content: center;
     margin-top: 3rem;
     font-size: 5rem;}
+
 
 .boton{
     margin-top: 2rem;
@@ -435,8 +446,23 @@ header h1{
         margin-bottom: 1rem;
         width: 15rem;
         position: relative;}
+
+    #texto-contacto{
+        width: 300px;
+        margin-left: 4px;
+    }
     }
     
-    
+    label:hover{
+        transform: translate(15px)
+    }
 
+
+    button:hover{
+        transform: scale(2);
+    }
     
+    .alert{
+        color:  rgb(186, 215, 233);
+        background-color: rgb(14, 112, 14);
+    }
